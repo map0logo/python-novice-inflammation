@@ -1,7 +1,8 @@
 ---
-layout: page
-title: Programming with Python
+layout: lesson
+root: .
 ---
+
 The best way to learn how to program is to do something useful,
 so this introduction to Python is built around a common scientific task:
 data analysis.
@@ -17,12 +18,12 @@ We use Python in our lessons because:
 
 But the two most important things are
 to use whatever language your colleagues are using,
-so that you can share you work with them easily,
+so that you can share your work with them easily,
 and to use that language *well*.
 
 We are studying inflammation in patients who have been given a new treatment for arthritis,
-and need to analyze the first dozen data sets.
-The data sets are stored in [comma-separated values](reference.html#comma-separated-values) (CSV) format:
+and need to analyze the first dozen data sets of their daily inflammation.
+The data sets are stored in [comma-separated values]({{ page.root }}/reference/#comma-separated-values) (CSV) format:
 each row holds information for a single patient,
 and the columns represent successive days.
 The first few rows of our first file look like this:
@@ -34,6 +35,7 @@ The first few rows of our first file look like this:
 0,0,2,0,4,2,2,1,6,7,10,7,9,13,8,8,15,10,10,7,17,4,4,7,6,15,6,4,9,11,3,5,6,3,3,4,2,3,2,1
 0,1,1,3,3,1,3,5,2,4,4,7,6,5,3,10,8,10,6,17,9,14,9,7,13,9,12,6,7,7,9,6,3,2,2,4,2,0,1,1
 ~~~
+{: .source}
 
 We want to:
 
@@ -43,28 +45,14 @@ We want to:
 
 To do all that, we'll have to learn a little bit about programming.
 
-> ## Prerequisites {.prereq}
+> ## Prerequisites
 >
 > Learners need to understand the concepts of files and directories
 > (including the working directory) and how to start a Python
-> interpreter before tackling this lesson.
+> interpreter before tackling this lesson. This lesson references the Jupyter (IPython)
+> Notebook although it can be taught through any Python interpreter.
+> The commands in this lesson pertain to **Python 3**.
+{: .prereq}
 
-## Topics
-
-1.  [Analyzing Patient Data](01-numpy.html)
-2.  [Repeating Actions with Loops](02-loop.html)
-3.  [Storing Multiple Values in Lists](03-lists.html)
-4.  [Analyzing Data from Multiple Files](04-files.html)
-3.  [Making Choices](05-cond.html)
-4.  [Creating Functions](06-func.html)
-5.  [Defensive Programming](07-defensive.html)
-6.  [Command-Line Programs](08-cmdline.html)
-7.  [Errors and Exceptions](09-errors.html)
-8.  [Supplementary Material](10-supplementary.html)
-
-## Other Resources
-
-*   [Motivation](motivation.html)
-*   [Reference](reference.html)
-*   [Discussion](discussion.html)
-*   [Instructor's Guide](instructors.html)
+### Getting Started
+To get started, follow the directions in the "[Setup](setup/)" tab to download data to your computer and follow any installation instructions. 
